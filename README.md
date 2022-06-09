@@ -1,6 +1,6 @@
 # Getting Started with React-Counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app demonstrates how to persist data in web interface using MongoDB Atlas and React. CRUD operations are performed on cloud storage using mongoose API.
 
 ## Available Scripts
 
@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Reference
+
+[codewithmosh](https://codewithmosh.com/)
