@@ -1,0 +1,10 @@
+sudo: required
+language: generic
+services:
+  - docker
+
+before_install:
+  - docker build -t counter_test -f Dockerfile.dev .
+
+scripts:
+  - docker run -e CI=true counter_test npm run test
