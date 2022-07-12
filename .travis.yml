@@ -8,3 +8,15 @@ before_install:
 
 scripts:
   - docker run -e CI=true counter_test npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-1"
+  app: "docker-counter"
+  env: "Dockercounter-env"
+  bucket_name: "elasticbeanstalk-us-west-1-726708131537"
+  bucket_path: "docker-counter"
+  on:
+    branch: main
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"

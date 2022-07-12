@@ -55,6 +55,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <h1 style={{ textAlign: "center" }} >learn react</h1>
         <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length} visits={this.state.visits}></NavBar>
         <main className="container">
           <Counters
